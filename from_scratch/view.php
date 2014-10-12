@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('config.php');
+?>
 <html lang="en">
 
 <head>
@@ -27,8 +30,13 @@
     <![endif]-->
 
 </head>
-
+<style type="text/css">
+    #footer {
+    display: none;
+}
+</style>
 <body>
+
 
    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,6 +61,20 @@
     </div>
 </nav>
 
+<?php
+        if($_GET['id']){ 
+            $id = $_GET['id'];
+            $statements= $db->prepare("select * from user_uploads where id='$id'");
+            $statements->execute();
+            $data = $statements->fetchAll(PDO::FETCH_ASSOC);
+          // print_r($result);exit;
+            $stmt = $db->prepare("select img_path from image_table where content_id='$id'");
+            $stmt->execute();
+            $imgpath = $stmt->fetch(PDO::FETCH_ASSOC);
+            $imgpath = str_replace("\\","/",$imgpath);
+
+             
+  ?>
     <!-- Page Content -->
     <div class="container">
 
@@ -64,7 +86,7 @@
                 <!-- Blog Post -->
 
                 <!-- Title -->
-                <h1>Blog Post Title</h1>
+                <h1><?php echo $data[0]['title']; ?></h1>
 
                 <!-- Author -->
                
@@ -77,35 +99,30 @@
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <img style="height=300px;width=900px;"class="img-responsive" src=<?php echo "uploads/".$imgpath['img_path']; ?> alt="">
 
                 <hr>
 
                 <!-- Post Content -->
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
+                <p class="lead"><?php echo $data[0]['description']; ?>
                 <hr>
-
+                    
                 <!-- Blog Comments -->
                 
                 <div id="disqus_thread"></div>
                     <script type="text/javascript">
                         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                        var disqus_shortname = 'snake'; // required: replace example with your forum shortname
+                        var disqus_shortname = 'kingfisher'; // required: replace example with your forum shortname
                 
                         /* * * DON'T EDIT BELOW THIS LINE * * */
                         (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            var dsq = document.createElement('script'); 
+                            dsq.type = 'text/javascript'; dsq.async = true;
                             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                         })();
                     </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+            <?php    } ?>    
 </body>
 
 </html>
