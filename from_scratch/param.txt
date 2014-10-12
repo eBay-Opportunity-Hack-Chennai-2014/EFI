@@ -1,0 +1,3 @@
+Sun Oct 12 05:05:11 2014
+
+HSaliency.exe C8.jpg .\ 

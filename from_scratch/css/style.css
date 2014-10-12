@@ -1,0 +1,222 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+#page-content-wrapper li {
+    list-style: none;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 10px;
+    line-height: 40px;
+    margin-top: 5px;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li input {
+    margin: 0 10px 0;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#sidebar-wrapper h6 {
+    color: white;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        position: relative;
+        left: 15px;
+        top: 50px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.post {
+    margin: 10px 10px 10px -10px;
+}
+
+.post-img {
+    width: 166px;
+    display: inline;
+    float: left;
+    border: 3px solid #000;
+    padding: 5px;
+}
+.post-img img {
+    width: 150px;
+}
+
+.post-end {
+    height: 1px;
+    background-image: 
+}
+
+.post-right-column {
+    position: relative;
+    left: 10px;
+    top: -12px;
+}
+
+.post-content p {
+    left: 30px;
+    position: relative;
+}
+
+.social-cluster-list {
+    padding: 5px;
+}
+
+.social-cluster-list li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+}
+
+.social-cluster-list .post-meta {
+    width: 200px;
+}
+
+.social-cluster-list li p {
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.glyphicon-heart-empty, .glyphicon-heart {
+    color: red;
+}
+
+.glyphicon-comment {
+    color: blue;
+}
+
+.glyphicon-share {
+    color: green;
+}
+
+.glyphicon-time {
+    color: #BEBEBE;
+}
+#searchButton{
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
+.add-form {
+    width: 33%;
+    margin: auto;
+}
+
+.main_wrapper {
+    top: 140px;
+    position: relative;
+}

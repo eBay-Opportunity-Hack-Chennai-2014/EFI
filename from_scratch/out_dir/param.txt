@@ -1,0 +1,3 @@
+Sun Oct 12 14:05:06 2014
+
+D:\Octave\hsaliencyexe\hack_final\HSaliency.exe uploads/E7.jpg .\out_dir\ 

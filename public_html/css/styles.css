@@ -1,0 +1,287 @@
+/* CSS Document */
+body
+{
+	margin:0px
+}
+img
+{
+	border:0px;	
+}
+
+#outermost
+{
+	width:100%;
+	background:#ffffff url(../images/body_bg.jpg) repeat;
+}
+#maintable
+{
+	width:1000px;
+}
+#greenLinks
+{
+	height:41px;
+	background-color:#5c9722;
+	font-family:Arial;
+	font-size:18px;
+	text-decoration:none;
+	color:#000000;
+	font-weight:bold;
+}
+.greenLinks a
+{
+	height:41px;
+	background-color:#5c9722;
+	font-family:Arial;
+	font-size:18px;
+	text-decoration:none;
+	color:#000000;
+	font-weight:bold;
+	padding:0px 27px 0px 27px;
+}
+.greenLinks a:hover
+{
+	height:41px;
+	background-color:#5c9722;
+	font-family:Arial;
+	font-size:18px;
+	text-decoration:none;
+	color:#ffffff;
+	font-weight:bold;
+}
+.bodyContentA
+{
+	background-color:#9bbf78;
+}
+
+.bodyContentB
+{
+
+	width:1000px;
+	height:187px;
+	background: url(../images/rounded_rectangle.png) no-repeat;;
+}
+
+#mainActivities
+{
+	background-color:#ffffff;
+}
+#activityCol
+{
+	width:290px;
+	display:block;
+	margin:5px;
+	border-bottom:1px dotted #000000;
+}
+#activityCol img
+{
+	margin:0px 5px 5px 0px;
+	float:left;
+}
+.activityHeading
+{
+	font-family:Verdana;
+	font-size:11px;
+	text-decoration:none;
+	color:#653b15;
+	font-weight:bold;
+}
+.readMore
+{
+	font-family:Verdana;
+	font-size:11px;
+	text-decoration:none;
+	color:#a00000;
+	font-weight:bold;	
+}
+.readMore:hover
+{
+	font-family:Verdana;
+	font-size:11px;
+	text-decoration:underline;
+	color:#a00000;
+	font-weight:bold;	
+}
+
+#mainLinks
+{
+	padding:0px 30px 10px 30px;
+	float:left;
+	text-align:center;
+}
+
+.mainLinks
+{
+	font-family:"Arial Narrow";
+	font-size:24px;
+	font-weight:bold;
+	color:#643a17;
+	text-decoration:none;
+	text-align:center;
+	line-height:20px;
+}
+#subLinks
+{
+	height:25px;
+	background-color:##5c9722;
+	width:100%;
+	display:block;
+	margin:2px;
+	
+}
+.subLinks
+{
+	font-family:"Arial Narrow";
+	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	line-height:25px;
+	background-color:#5c9722;
+	width:100%;
+	display:block;
+	padding-left:5px;
+	opacity:0.7; 
+	filter:alpha(opacity=70);
+}
+.subLinks:hover
+{
+	font-family:"Arial Narrow";
+	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	line-height:25px;
+	background-color:#5c9722;
+	width:100%;
+	display:block;
+	padding-left:5px;
+	opacity:0.9; 
+	filter:alpha(opacity=90);
+}
+
+.borderRight
+{
+	border-right:1px dotted #000000;
+}
+
+
+
+
+.text
+{
+	font-family:Verdana;
+	font-size:11px;
+	text-decoration:none;
+	padding:10px;
+	text-align:justify;
+}
+.textBig
+{
+	font-family:Verdana;
+	font-size:13px;
+	text-decoration:none;
+	padding:20px;
+	text-align:justify;
+}
+.textBold
+{
+	font-family:Verdana;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#000000;
+}
+.textGreen
+{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#5c9722;
+}
+.textGreenBold
+{
+	font-family:Verdana;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#000000;
+	background-color:#5c9722;
+	padding:10px;
+}
+
+.verticalLine
+{
+	border-right: #e25000 dotted 1px;
+}
+.pageHeading
+{
+	font-family:"Arial Narrow";
+	font-size:24px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	text-align:left;
+	line-height:20px;
+}
+.activitiesHead
+{
+	background: url(../images/activities_heading_bg.png) no-repeat;
+	font-family:Verdana;
+	font-size:14px;
+	text-decoration:none;
+	color:#46650b;
+	font-weight:bold;
+	line-height:61px;
+	width:320;
+	height:71px;
+	padding-left:5px;
+}
+.activitiesHeada
+{
+	background: url(../images/green_foot_bg.png) repeat-x;
+	font-family:Verdana;
+	font-size:14px;
+	text-decoration:none;
+	color:#ffffff;
+	font-weight:bold;
+	line-height:61px;
+	width:320;
+	height:63px;
+	padding-left:5px;
+}
+
+.footer
+{
+	font-family:Verdana;
+	font-size:10px;
+	text-decoration:none;
+	width:100%;
+	color:#000000;
+	padding:5px;
+	border-top:1px dotted #acacac;
+	
+}
+.footerLink
+{
+	font-family:Verdana;
+	font-size:10px;
+	text-decoration:none;
+	width:100%;
+	color:#000000;
+	border-top:1px dotted #acacac;
+	
+}
+
+.footerLink:hover
+{
+	font-family:Verdana;
+	font-size:10px;
+	text-decoration:underline;
+	width:100%;
+	color:#000000;
+	border-top:1px dotted #acacac;
+	
+}
