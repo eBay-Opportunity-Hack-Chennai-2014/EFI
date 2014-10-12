@@ -1,0 +1,38 @@
+<div class="post-div">
+    <h2 class="jqmaintitle">
+        <a href="view.php?id={{post.id}}">{{post.title}}</a>
+    </h2>
+      <div class="social-cluster">
+            <ul class="social-cluster-list">
+                <li class="likes">
+                    <span class="glyphicon glyphicon-heart-empty"></span>
+                    <p class="like-count">{{post.likes}}</p>
+                </li>
+                <li class="comments">
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <p class="comment-count">{{post.comments}}</p>
+                </li>
+                <li class="share">
+                    <span class="glyphicon glyphicon-share"></span>
+                    <p class="share-count">{{post.shares}}</p>
+                </li>
+                <li class="post-meta">
+                    <span class="glyphicon glyphicon-time"></span>
+                    <p>{{post.created}}</p>
+                </li>
+            </ul>
+        </div>
+    <div class="post-img">
+        <img style="height:150px;width:150px;"src="uploads/{{post.imgPath}}">
+    </div>
+    <div class="post-right-column">
+        <div class="post-content">
+            <h1></h1>
+            <p>{{post.desc}}</p>
+        </div>
+      
+    </div>
+    <span class="read_more_l"><a style="text-decoration:none;" href="view.php?id={{post.id}}"><i class="fa fa-link"></i>  <span class="read_more_t">Read more</span></a></span>
+    <span class="post-end"></span>
+    
+</div>
